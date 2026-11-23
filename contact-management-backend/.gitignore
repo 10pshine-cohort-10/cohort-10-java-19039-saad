@@ -1,0 +1,10 @@
+target/
+logs/
+*.log
+.env
+.idea/
+*.iml
+.vscode/
+.sonar/
+.scannerwork/
+*.class

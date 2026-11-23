@@ -1,0 +1,13 @@
+# Datasource is supplied by SQL Server Testcontainers (@ServiceConnection) at test time.
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+app:
+  jwt:
+    secret: dGVzdC1vbmx5LXNlY3JldC1rZXktbm90LWZvci1wcm9kdWN0aW9uLXVzZS0xMjM0NTY3OA==
+    access-ttl-minutes: 5
+    refresh-ttl-days: 1
+logging:
+  level:
+    com.cms: DEBUG
