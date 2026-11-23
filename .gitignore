@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.env
+.env.local
+*.log
+logs/
+target/
+dist/
+coverage/
+.idea/
+.vscode/
+.scannerwork/
