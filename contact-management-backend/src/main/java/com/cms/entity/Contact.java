@@ -248,9 +248,10 @@ public class Contact {
     }
 
     public void setEmails(List<ContactEmail> emails) {
+        List<ContactEmail> copy = emails == null ? List.of() : new ArrayList<>(emails);
         this.emails.clear();
-        if (emails != null) {
-            emails.forEach(this::addEmail);
+        for (ContactEmail email : copy) {
+            addEmail(email);
         }
     }
 
@@ -259,9 +260,10 @@ public class Contact {
     }
 
     public void setPhoneNumbers(List<ContactPhoneNumber> phoneNumbers) {
+        List<ContactPhoneNumber> copy = phoneNumbers == null ? List.of() : new ArrayList<>(phoneNumbers);
         this.phoneNumbers.clear();
-        if (phoneNumbers != null) {
-            phoneNumbers.forEach(this::addPhoneNumber);
+        for (ContactPhoneNumber phone : copy) {
+            addPhoneNumber(phone);
         }
     }
 
